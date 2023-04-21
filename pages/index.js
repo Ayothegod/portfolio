@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -56,7 +57,7 @@ export default function Home() {
                 <h3>Git</h3>
               </div>
             </aside>
-            <aside className="w-full border rounded-md border-zinc-500 p-2 mt-4">
+            <aside className="w-full border rounded-lg border-zinc-300 p-2 mt-4">
               <p>
                  Things i am currently learning on plan to learn in the
                 near future
@@ -79,12 +80,9 @@ export default function Home() {
           </section>
 
           <section id="projects" className="max-w-[60rem] mx-auto mt-8">
-            Projects
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              dolorem a architecto neque vel consequatur facilis, quas autem,
-              iure rerum eos sequi nesciunt nostrum nihil veritatis tempora
-              earum ullam est!
+            <h2 className="font-bold text-white text-3xl mb-2">Projects</h2>
+            <p className="flex">
+              I like to build things i will use or find interesting. It may be stuff i find on the internet or things am genuinly need.Here are a couple of them, you can find other one&apos;s on my github.
             </p>
           </section>
         </main>
