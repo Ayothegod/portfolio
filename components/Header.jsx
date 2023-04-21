@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className=" flex justify-between items-center p-2">
+    <div className="bg-black flex justify-between items-center p-2">
       <Image src={gitsvg1} alt="NodeIcon" className="w-10 fill-red-500 " />
       <ul className="flex space-x-6">
         <li className="text-md hover:text-green-700 ">

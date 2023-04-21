@@ -11,33 +11,82 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-black text-[#999] py-1">
-
         <nav className="sticky top-0 border-b border-b-zinc-800 ">
           <section className="max-w-[60rem] mx-auto ">
             <Header />
           </section>
         </nav>
         <main className="px-4">
+          <section className="max-w-[60rem] mx-auto mt-4">
+            <h1 className="font-bold text-white text-3xl mb-2">
+              Hi, I&apos;m Ayomide
+            </h1>
+            <p className=" leading-7 ">
+              I&apos;m a{" "}
+              <span className="text-green-700">Software Developer</span>. I
+              enjoy <span className="text-green-700">Building </span> things and
+              seeing new things come to life with code. I do enjoy{" "}
+              <span className="text-green-700">experimenting</span> a lot on new
+              tech and tools and i am a huge learner. I am huge on some{" "}
+              <span className="text-green-700">stuff</span> : AI, Drone
+              Technology, International Politics etc and i feel ML is boring
+              LoL.
+            </p>
+          </section>
 
-        <section className="max-w-[60rem] mx-auto mt-4">
-          <h1 className="font-bold text-white text-3xl mb-2">Hi, I&apos;m Ayomide</h1>
-          <p className=" leading-7 ">
-            I&apos;m a <span className="text-green-700">Software Developer</span>. I enjoy <span className="text-green-700">Building </span> things and seeing new things come to life with code.
-            I do enjoy <span className="text-green-700">experimenting</span> a lot on new tech and tools and i am a huge learner.
-            I am huge on some <span className="text-green-700">stuff</span> : AI, Drone  Technology, International Politics etc and i feel ML is boring LoL.</p>
-        </section>
+          <section id="tools" className="max-w-[60rem] mx-auto mt-8">
+            <h1 className="font-bold text-white text-3xl mb-2">Tools</h1>
+            <p className="">
+              Over the course of my coding Journey i have come across many tools
+              and services. My Prim ary Stack includes React on the frontend and
+              Nodejs on the backend. I have listed some of the languages/tools i
+              use below.
+            </p>
+            <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2">
+              <div className="hover:text-blue-600 cursor-pointer">
+                <h3>React</h3>
+              </div>
+              <div>
+                <h3>Node</h3>
+              </div>
+              <div>
+                <h3>PostgreSQL</h3>
+              </div>
+              <div>
+                <h3>Git</h3>
+              </div>
+            </aside>
+            <aside className="w-full border rounded-md border-zinc-500 p-2 mt-4">
+              <p>
+                -&gt; Things i am currently learning on plan to learn in the
+                near future
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2">
+                <div className="hover:text-blue-600 cursor-pointer">
+                  <h3>React</h3>
+                </div>
+                <div>
+                  <h3>Node</h3>
+                </div>
+                <div>
+                  <h3>PostgreSQL</h3>
+                </div>
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </div>
+            </aside>
+          </section>
 
-        <section id="tools"  className="max-w-[60rem] mx-auto mt-8">
-          <h1 className="font-bold text-white text-3xl mb-2">Tools</h1>
-          <p>Over the course of my coding Journey i have come across many tools</p>
-        </section>
-
-        <section id="projects" className="max-w-[60rem] mx-auto mt-8">
-          Projects
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem a architecto neque vel consequatur facilis, quas autem, iure rerum eos sequi nesciunt nostrum nihil veritatis tempora earum ullam est!</p>
-        </section>
-        
-
+          <section id="projects" className="max-w-[60rem] mx-auto mt-8">
+            Projects
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              dolorem a architecto neque vel consequatur facilis, quas autem,
+              iure rerum eos sequi nesciunt nostrum nihil veritatis tempora
+              earum ullam est!
+            </p>
+          </section>
         </main>
       </main>
     </>
