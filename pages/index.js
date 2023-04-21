@@ -10,20 +10,25 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black text-[#999] py-1 px-2">
+      <main className="bg-black text-[#999] py-1">
 
         <nav className="sticky top-0 border-b border-b-zinc-800 ">
           <section className="max-w-[60rem] mx-auto ">
             <Header />
           </section>
         </nav>
+        <main className="px-4">
 
-        <section className="max-w-[60rem] mx-auto ">
-          <h1>Hi, I'm Ayomide</h1>
+        <section className="max-w-[60rem] mx-auto mt-4">
+          <h1 className="font-bold text-white text-3xl mb-2">Hi, I&apos;m Ayomide</h1>
+          <p className=" leading-7 ">
+            I&apos;m a <span className="text-green-700">Software Developer</span>. I enjoy <span className="text-green-700">Building </span> things and seeing new things come to life with code.
+            I do enjoy <span className="text-green-700">experimenting</span> a lot on new tech and tools and i am a huge learner.
+            I am huge on some <span className="text-green-700">stuff</span> : AI, Drone  Technology, International Politics etc and i feel ML is boring LoL.</p>
         </section>
 
-        <section id="tools"  className="max-w-[60rem] mx-auto  h-[10rem]">
-          About
+        <section id="tools"  className="max-w-[60rem] mx-auto mt-8">
+          <h1 className="font-bold text-white text-3xl mb-2">Tools</h1>
         </section>
 
         <section id="projects" className="max-w-[60rem] mx-auto h-[10rem]">
@@ -32,6 +37,7 @@ export default function Home() {
         </section>
         
 
+        </main>
       </main>
     </>
   );
