@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black text-[#999] py-1">
+      <main className="bg-black text-[#999] py-1 px-2">
 
         <nav className="sticky top-0 border-b border-b-zinc-800 ">
           <section className="max-w-[60rem] mx-auto ">
@@ -18,12 +18,15 @@ export default function Home() {
           </section>
         </nav>
 
-        <section id="about"  className="max-w-[60rem] mx-auto p-8 h-[10rem]">
-          About
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem a architecto neque vel consequatur facilis, quas autem, iure rerum eos sequi nesciunt nostrum nihil veritatis tempora earum ullam est!</p>
+        <section className="max-w-[60rem] mx-auto ">
+          <h1>Hi, I'm Ayomide</h1>
         </section>
 
-        <section id="tools" className="max-w-[60rem] mx-auto p-8 h-[10rem]">
+        <section id="tools"  className="max-w-[60rem] mx-auto  h-[10rem]">
+          About
+        </section>
+
+        <section id="projects" className="max-w-[60rem] mx-auto h-[10rem]">
           tools
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem a architecto neque vel consequatur facilis, quas autem, iure rerum eos sequi nesciunt nostrum nihil veritatis tempora earum ullam est!</p>
         </section>

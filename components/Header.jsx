@@ -14,10 +14,10 @@ const Header = () => {
           <Link href="/">/Home</Link>
         </li>
         <li className="text-md hover:text-green-700">
-          <Link href="#projects">/Projects</Link>
+          <Link href="#projects">/Tools</Link>
         </li>
         <li className="text-md hover:text-green-700">
-          <Link href="#tools">/Tools</Link>
+          <Link href="#tools">/Projects</Link>
         </li>
         <li className="text-md hover:text-green-700">
           <Link href='/blog'>/Blog</Link>
