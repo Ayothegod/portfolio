@@ -89,7 +89,7 @@ export default function Home() {
               stuff i find on the internet or things am genuinly need.Here are a
               couple of them, you can find other one&apos;s on my github.
             </p>
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 gap-4 ">
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 gap-8 ">
               <div className="flex flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-center">
                 <div className="h-48 sm:h-60 rounded-lg overflow-hidden ">
                   <Image
@@ -102,7 +102,7 @@ export default function Home() {
                   <h3 className="font-semibold text-white text-lg sm:text-2xl leading-none">
                     Shop Itt
                   </h3>
-                  <p className="mt-1">
+                  <p className="sm:mt-2">
                     An Ecommerce app with a cms (Sanity Cms) with checkout
                     available
                   </p>
@@ -110,7 +110,33 @@ export default function Home() {
                     <button className="font-medium text-white flex">
                       <Link href="/">Visit Website </Link>
                     </button>
-                    <button className="bg-[#0EA975] px-2 py-1 rounded-lg text-white font-medium">
+                    <button className="bg-neutral-200 px-2 py-1 rounded-lg text-black font-medium">
+                      <Link href="/">Visit Github</Link>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row-reverse justify-between gap-y-2 gap-x-4 sm:items-center">
+                <div className="h-48 sm:h-60 rounded-lg overflow-hidden ">
+                  <Image
+                    src={dummyImage}
+                    alt="dummy"
+                    className="w-full h-full hover:scale-110 transition-transform duration-300 ease-in-out object-cover object-center"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white text-lg sm:text-2xl leading-none">
+                    Shop Itt
+                  </h3>
+                  <p className="sm:mt-2">
+                    An Ecommerce app with a cms (Sanity Cms) with checkout
+                    available
+                  </p>
+                  <div className="flex justify-between items-center sm:mt-2">
+                    <button className="font-medium text-white flex">
+                      <Link href="/">Visit Website </Link>
+                    </button>
+                    <button className="bg-neutral-200 px-2 py-1 rounded-lg text-black font-medium">
                       <Link href="/">Visit Github</Link>
                     </button>
                   </div>
