@@ -10,19 +10,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div >
-        <Header/>
-        <p className=" text-4xl m-10">Hello</p>
-        <section id="section-1"  className="h-[60rem] bg-[#0C8A60] max-w-[60rem] text-white flex justify-center  items-center m-auto ">
-          This is section 1
-        </section>
-        <section id="section-2" className="h-[60rem] bg-blue-500 max-w-[72rem] m-auto text-white flex justify-center items-center ">
-          This is section 2
-        </section>
-        <section id="section-3" className="h-[60rem] bg-red-500 text-white flex justify-center items-center ">
-          This is section 3
-        </section>
-      </div>
+      <main className="bg-black text-[#999]  ">
+        <nav>
+          <section className="max-w-[60rem] m-auto py-1">
+            <Header />
+          </section>
+        </nav>
+      </main>
     </>
   );
 }
