@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import dummyImage from "@/assets/Screenshot (155).png";
 import Image from "next/image";
+import { SiTypescript } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -14,17 +15,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-black text-[#999] py-1">
-        <nav className="sticky top-0 border-b border-b-zinc-800 ">
+        <nav className="sticky top-0 border-b border-b-neutral-800 bg-dark bg-opacity-70 backdrop-blur-lg ">
           <section className="max-w-[60rem] mx-auto ">
             <Header />
           </section>
         </nav>
         <main className="px-4">
           <section className="max-w-[60rem] mx-auto mt-4">
-            <h1 className="font-bold text-white text-3xl mb-2">
+            <h1 className="font-bold text-white text-2xl mb-2">
               Hi, I&apos;m Ayomide
             </h1>
-            <p className=" leading-7 ">
+            <p className="">
               I&apos;m a{" "}
               <span className="text-green-700">Software Developer</span>. I
               enjoy <span className="text-green-700">Building </span> things and
@@ -38,7 +39,7 @@ export default function Home() {
           </section>
 
           <section id="tools" className="max-w-[60rem] mx-auto mt-8">
-            <h1 className="font-bold text-white text-3xl mb-2">Tools</h1>
+            <h1 className="font-bold text-white text-2xl mb-2">Tools</h1>
             <p className="">
               Over the course of my coding Journey i have come across many tools
               and services. My Prim ary Stack includes React on the frontend and
@@ -47,7 +48,7 @@ export default function Home() {
             </p>
             <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2">
               <div className="hover:text-blue-600 cursor-pointer">
-                <h3>React</h3>
+                <h3 className="font-medium">React</h3>
               </div>
               <div>
                 <h3>Node</h3>
@@ -82,30 +83,39 @@ export default function Home() {
           </section>
 
           <section id="projects" className="max-w-[60rem] mx-auto mt-8 mb-8">
-            <h2 className="font-bold text-white text-3xl mb-2">Projects</h2>
-            <p className="flex">
+            <h2 className="font-bold text-white text-2xl mb-2">Projects</h2>
+            <p className="">
               I like to build things i will use or find interesting. It may be
               stuff i find on the internet or things am genuinly need.Here are a
               couple of them, you can find other one&apos;s on my github.
             </p>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 gap-4 ">
-              <div className="flex flex-col sm:flex-row gap-4 ">
-                <div className="h-72 rounded-lg overflow-hidden">
+              <div className="flex flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-center">
+                <div className="h-48 sm:h-60 rounded-lg overflow-hidden ">
                   <Image
                     src={dummyImage}
                     alt="dummy"
-                    className="w-full h-full sm:"
+                    className="w-full h-full hover:scale-110 transition-transform duration-300 ease-in-out object-cover object-center"
                   />
                 </div>
                 <div>
-                  <h3>Shop Itt</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Inventore, rerum?
+                  <h3 className="font-semibold text-white text-lg sm:text-2xl leading-none">
+                    Shop Itt
+                  </h3>
+                  <p className="mt-1">
+                    An Ecommerce app with a cms (Sanity Cms) with checkout
+                    available
                   </p>
+                  <div className="flex justify-between items-center sm:mt-2">
+                    <button className="font-medium text-white flex">
+                      <Link href="/">Visit Website </Link>
+                    </button>
+                    <button className="bg-[#0EA975] px-2 py-1 rounded-lg text-white font-medium">
+                      <Link href="/">Visit Github</Link>
+                    </button>
+                  </div>
                 </div>
               </div>
-             
             </div>
           </section>
         </main>
