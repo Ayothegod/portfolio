@@ -81,40 +81,31 @@ export default function Home() {
             </aside>
           </section>
 
-          <section id="projects" className="max-w-[60rem] mx-auto mt-8">
+          <section id="projects" className="max-w-[60rem] mx-auto mt-8 mb-8">
             <h2 className="font-bold text-white text-3xl mb-2">Projects</h2>
             <p className="flex">
               I like to build things i will use or find interesting. It may be
               stuff i find on the internet or things am genuinly need.Here are a
               couple of them, you can find other one&apos;s on my github.
             </p>
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 ">
-              <div className="">
-                <Image
-                  src={dummyImage}
-                  alt="dummy"
-                  className="w-full h-60 sm:"
-                />
-                <h3>Shop Itt</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Inventore, rerum?
-                </p>
-              </div>
-              <div className="">
-                <div className="w-full h-60">
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 gap-4 ">
+              <div className="flex flex-col sm:flex-row gap-4 ">
+                <div className="h-72 rounded-lg overflow-hidden">
                   <Image
                     src={dummyImage}
                     alt="dummy"
                     className="w-full h-full sm:"
                   />
                 </div>
-                <h3>Shop Itt</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Inventore, rerum?
-                </p>
+                <div>
+                  <h3>Shop Itt</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore, rerum?
+                  </p>
+                </div>
               </div>
+             
             </div>
           </section>
         </main>
