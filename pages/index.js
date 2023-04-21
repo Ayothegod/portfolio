@@ -29,10 +29,11 @@ export default function Home() {
 
         <section id="tools"  className="max-w-[60rem] mx-auto mt-8">
           <h1 className="font-bold text-white text-3xl mb-2">Tools</h1>
+          <p>Over the course of my coding Journey i have come across many tools</p>
         </section>
 
-        <section id="projects" className="max-w-[60rem] mx-auto h-[10rem]">
-          tools
+        <section id="projects" className="max-w-[60rem] mx-auto mt-8">
+          Projects
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem a architecto neque vel consequatur facilis, quas autem, iure rerum eos sequi nesciunt nostrum nihil veritatis tempora earum ullam est!</p>
         </section>
         
