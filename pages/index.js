@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import Head from "next/head";
 import Link from "next/link";
+import dummyImage from "@/assets/Screenshot (155).png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -59,8 +61,8 @@ export default function Home() {
             </aside>
             <aside className="w-full border rounded-lg border-zinc-300 p-2 mt-4">
               <p>
-                 Things i am currently learning on plan to learn in the
-                near future
+                Things i am currently learning on plan to learn in the near
+                future
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2 px-2">
                 <div className="hover:text-blue-600 cursor-pointer">
@@ -82,8 +84,38 @@ export default function Home() {
           <section id="projects" className="max-w-[60rem] mx-auto mt-8">
             <h2 className="font-bold text-white text-3xl mb-2">Projects</h2>
             <p className="flex">
-              I like to build things i will use or find interesting. It may be stuff i find on the internet or things am genuinly need.Here are a couple of them, you can find other one&apos;s on my github.
+              I like to build things i will use or find interesting. It may be
+              stuff i find on the internet or things am genuinly need.Here are a
+              couple of them, you can find other one&apos;s on my github.
             </p>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 ">
+              <div className="">
+                <Image
+                  src={dummyImage}
+                  alt="dummy"
+                  className="w-full h-60 sm:"
+                />
+                <h3>Shop Itt</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Inventore, rerum?
+                </p>
+              </div>
+              <div className="">
+                <div className="w-full h-60">
+                  <Image
+                    src={dummyImage}
+                    alt="dummy"
+                    className="w-full h-full sm:"
+                  />
+                </div>
+                <h3>Shop Itt</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Inventore, rerum?
+                </p>
+              </div>
+            </div>
           </section>
         </main>
       </main>
