@@ -58,10 +58,10 @@ export default function Home() {
             </aside>
             <aside className="w-full border rounded-md border-zinc-500 p-2 mt-4">
               <p>
-                -&gt; Things i am currently learning on plan to learn in the
+                 Things i am currently learning on plan to learn in the
                 near future
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2 px-2">
                 <div className="hover:text-blue-600 cursor-pointer">
                   <h3>React</h3>
                 </div>
