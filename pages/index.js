@@ -70,7 +70,7 @@ export default function Home() {
             </aside>
           </section>
 
-          <section id="projects" className="max-w-[60rem] mx-auto mt-8 pb-4 ">
+          <section id="projects" className="max-w-[60rem] mx-auto mt-8 pb-4 border-b border-b-neutral-800">
             <h2 className="font-bold text-white text-2xl mb-2">Projects</h2>
             <p className="">
               I like to build things i will use or find interesting. It may be
@@ -83,7 +83,7 @@ export default function Home() {
             />
           </section>
 
-          <section>
+          <section className="max-w-[60rem] mx-auto mt-4 pb-4">
             <h2 className="text-white font-medium text-2xl ">Connect</h2>
             <p>Have an idea or want to contact me? get in touch below</p>
 
@@ -96,26 +96,26 @@ export default function Home() {
             </div> */}
             {/* form div above */}
 
-            <div>
+            <div className="">
               <p>Go the fast way, hit me</p>
-              <div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 mt-4">
                 <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-blue-700">
+                  <button className="flex items-center gap-2 hover:text-blue-700 text-xl">
                     <BsLinkedin /> <p>Linkedin</p>
                   </button>
                 </Link>
                 <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-blue-700">
+                  <button className="flex items-center gap-2 hover:text-neutral-700 text-xl">
                     <FaGithubSquare /> <p>Github</p>
                   </button>
                 </Link>
                 <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-blue-700">
+                  <button className="flex items-center gap-2 hover:text-red-400  text-xl">
                     <FaInstagramSquare /> <p>Instagram</p>
                   </button>
                 </Link>
                 <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-blue-700">
+                  <button className="flex items-center gap-2 hover:text-blue-400 text-xl">
                     <FaTwitterSquare /> <p>Twitter</p>
                   </button>
                 </Link>
