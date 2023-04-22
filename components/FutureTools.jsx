@@ -2,8 +2,6 @@ import {FaReact,FaRust} from "react-icons/fa"
 import {SiTypescript,SiSupabase, SiGraphql } from "react-icons/si"
 import {TbBrandGolang} from "react-icons/tb"
 
-
-
 const FutureTools = () => {
   return (
     <>

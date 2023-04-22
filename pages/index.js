@@ -90,10 +90,17 @@ export default function Home() {
               stuff i find on the internet or things am genuinly need.Here are a
               couple of them, you can find other one&apos;s on my github.
             </p>
+            <div className="flex flex-col gap-6 mt-4">
+              
             <Project
               name="Shop It"
-              desc="An Ecommerce app with a cms (Sanity Cms) with checkout available"
+              desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
             />
+            <Project
+              name="Note Taker"
+              desc="A Note taking app.with realtime database, crud functionality and user signup"
+              />
+              </div>
           </section>
 
           <section className="max-w-[60rem] mx-auto mt-4 pb-4">

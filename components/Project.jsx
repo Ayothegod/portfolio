@@ -5,16 +5,16 @@ import dummyImage from "@/assets/Screenshot (155).png";
 const Project = ({name,desc}) => {
   return (
    
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 gap-8 ">
+            <div className=" grid grid-cols-1 sm:grid-cols-1 gap-8 ">
               <div className="flex flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-center">
-                <div className="h-48 sm:h-60 rounded-lg overflow-hidden ">
+                <div className="h-48 w-full sm:w-1/2 sm:h-52 md:h-72 rounded-lg overflow-hidden ">
                   <Image
                     src={dummyImage}
                     alt="dummy"
                     className="w-full h-full hover:scale-110 transition-transform duration-300 ease-in-out object-cover object-center"
                   />
                 </div>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-2 w-full sm:w-1/2">
                   <h3 className="font-semibold text-white text-lg sm:text-2xl leading-none">
                     {name}
                   </h3>
