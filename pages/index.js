@@ -5,6 +5,7 @@ import Image from "next/image";
 import { SiTypescript } from "react-icons/si";
 import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -92,18 +93,14 @@ export default function Home() {
 
             </div> */} 
             {/* form div above */}
-            
+
             <div>
               <p>Go the fast way, hit me</p>
               <button></button>
             </div>
           </section>
         </main>
-        <footer className=" max-w-[72rem] mx-auto border-t border-t-neutral-800 p-2">
-          <section className="">
-            <h6 className="text-sm text-neutral-700">2023 Ayomide.</h6>
-          </section>
-        </footer>
+       <Footer/>
       </main>
     </>
   );
