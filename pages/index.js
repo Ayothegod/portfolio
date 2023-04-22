@@ -6,6 +6,8 @@ import { SiTypescript } from "react-icons/si";
 import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
 import Footer from "@/components/Footer";
+import { BsLinkedin } from "react-icons/bs";
+import { FaTwitterSquare ,FaInstagramSquare,FaGithubSquare} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -91,16 +93,37 @@ export default function Home() {
               <button>&gt;</button>
               </div>
 
-            </div> */} 
+            </div> */}
             {/* form div above */}
 
             <div>
               <p>Go the fast way, hit me</p>
-              <button></button>
+              <div>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-blue-700">
+                    <BsLinkedin /> <p>Linkedin</p>
+                  </button>
+                </Link>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-blue-700">
+                    <FaGithubSquare /> <p>Github</p>
+                  </button>
+                </Link>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-blue-700">
+                    <FaInstagramSquare /> <p>Instagram</p>
+                  </button>
+                </Link>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-blue-700">
+                    <FaTwitterSquare /> <p>Twitter</p>
+                  </button>
+                </Link>
+              </div>
             </div>
           </section>
         </main>
-       <Footer/>
+        <Footer />
       </main>
     </>
   );
