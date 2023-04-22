@@ -14,6 +14,9 @@ import {
 } from "react-icons/fa";
 import aboutImage from "@/assets/p4n2ny.jpg";
 import FutureTools from "@/components/FutureTools";
+import dummyImage from "@/assets/Screenshot (155).png";
+import dummyImage2 from "@/assets/20220519_195303.jpg";
+import dummyImage3 from "@/assets/20220526_055846.jpg";
 
 export default function Home() {
   return (
@@ -95,11 +98,16 @@ export default function Home() {
             <Project
               name="Shop It"
               desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
+              image={dummyImage}
             />
-            <Project
+            {/* <Project
               name="Note Taker"
               desc="A Note taking app.with realtime database, crud functionality and user signup"
               />
+            <Project
+              name="Zoommmm"
+              desc="Transport and ride hailing at its best. Lets take youi to your destination"
+              /> */}
               </div>
           </section>
 

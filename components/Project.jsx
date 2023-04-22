@@ -1,15 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
-import dummyImage from "@/assets/Screenshot (155).png";
 
-const Project = ({name,desc}) => {
+
+// assets\20220526_055846.jpg , assets\20220519_195303.jpg
+
+const Project = ({name,desc,image}) => {
   return (
    
             <div className=" grid grid-cols-1 sm:grid-cols-1 gap-8 ">
               <div className="flex flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-center">
                 <div className="h-48 w-full sm:w-1/2 sm:h-52 md:h-72 rounded-lg overflow-hidden ">
                   <Image
-                    src={dummyImage}
+                    src={image}
                     alt="dummy"
                     className="w-full h-full hover:scale-110 transition-transform duration-300 ease-in-out object-cover object-center"
                   />
