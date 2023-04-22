@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SiTypescript } from "react-icons/si";
 import Project from "@/components/Project";
+import IndTool from "@/components/IndTool";
 
 export default function Home() {
   return (
@@ -47,48 +48,41 @@ export default function Home() {
               use below.
             </p>
             <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2">
-              <div className="hover:text-blue-600 cursor-pointer">
-                <h3 className="font-medium">React</h3>
-              </div>
-              <div>
-                <h3>Node</h3>
-              </div>
-              <div>
-                <h3>PostgreSQL</h3>
-              </div>
-              <div>
-                <h3>Git</h3>
-              </div>
+              <IndTool name="React" />
+              <IndTool name="PostgreSQL" />
+              <IndTool name="TailwindCSS" />
+              <IndTool name="Git" />
             </aside>
-            <aside className="w-full border rounded-lg border-zinc-300 p-2 mt-4">
+            <aside className="w-full border rounded-lg border-neutral-500 py-4 px-2 mt-4">
               <p>
                 Things i am currently learning on plan to learn in the near
                 future
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2 px-2">
-                <div className="hover:text-blue-600 cursor-pointer">
-                  <h3>React</h3>
-                </div>
-                <div>
-                  <h3>Node</h3>
-                </div>
-                <div>
-                  <h3>PostgreSQL</h3>
-                </div>
-                <div>
-                  <h3>Git</h3>
-                </div>
+                <IndTool name="React" />
+                <IndTool name="PostgreSQL" />
+                <IndTool name="TailwindCSS" />
+                <IndTool name="Git" />
               </div>
             </aside>
           </section>
 
-          <Project/>
-          
+          <section id="projects" className="max-w-[60rem] mx-auto mt-8 pb-4 ">
+            <h2 className="font-bold text-white text-2xl mb-2">Projects</h2>
+            <p className="">
+              I like to build things i will use or find interesting. It may be
+              stuff i find on the internet or things am genuinly need.Here are a
+              couple of them, you can find other one&apos;s on my github.
+            </p>
+            <Project
+              name="Shop It"
+              desc="An Ecommerce app with a cms (Sanity Cms) with checkout available"
+            />
+          </section>
         </main>
         <footer className=" max-w-[72rem] mx-auto border-t border-t-neutral-800 p-2">
           <section className="">
-          <h6 className="text-sm text-neutral-700">2023 Ayomide.</h6>
-
+            <h6 className="text-sm text-neutral-700">2023 Ayomide.</h6>
           </section>
         </footer>
       </main>
