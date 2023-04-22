@@ -59,10 +59,7 @@ export default function Home() {
               use below.
             </p>
             <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2">
-              <IndTool name="React" />
-              <IndTool name="PostgreSQL" />
-              <IndTool name="TailwindCSS" />
-              <IndTool name="Git" />
+              <IndTool/>
             </aside>
             <aside className="w-full border rounded-lg border-neutral-500 py-4 px-2 mt-4">
               <p>
@@ -70,10 +67,7 @@ export default function Home() {
                 future
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2 px-2">
-                <IndTool name="React" />
-                <IndTool name="PostgreSQL" />
-                <IndTool name="TailwindCSS" />
-                <IndTool name="Git" />
+                <IndTool/>
               </div>
             </aside>
           </section>
