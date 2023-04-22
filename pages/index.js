@@ -82,7 +82,7 @@ export default function Home() {
 
           <section
             id="projects"
-            className="max-w-[60rem] mx-auto mt-8 pb-4 border-b border-b-neutral-800"
+            className="max-w-[60rem] mx-auto mt-8 pb-4 border-b border-b-neutral-900"
           >
             <h2 className="font-bold text-white text-2xl mb-2 ">Projects</h2>
             <p className="">
