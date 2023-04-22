@@ -77,7 +77,7 @@ export default function Home() {
             id="projects"
             className="max-w-[60rem] mx-auto mt-8 pb-4 border-b border-b-neutral-800"
           >
-            <h2 className="font-bold text-white text-2xl mb-2">Projects</h2>
+            <h2 className="font-bold text-white text-2xl mb-2 mt-24">Projects</h2>
             <p className="">
               I like to build things i will use or find interesting. It may be
               stuff i find on the internet or things am genuinly need.Here are a
@@ -92,15 +92,6 @@ export default function Home() {
           <section className="max-w-[60rem] mx-auto mt-4 pb-4">
             <h2 className="text-white font-medium text-2xl ">Connect</h2>
             <p>Have an idea or want to contact me? get in touch below</p>
-
-            {/* <div>
-              <div className="flex justify-between">
-              <button>Send a mail</button>
-              <button>&gt;</button>
-              </div>
-
-            </div> */}
-            {/* form div above */}
 
             <div className="">
               <p>Go the fast way, hit me</p>
