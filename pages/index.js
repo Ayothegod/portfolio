@@ -81,12 +81,23 @@ export default function Home() {
           </section>
 
           <section>
-            <h2>Get in touch</h2>
+            <h2 className="text-white font-medium text-2xl ">Connect</h2>
+            <p>Have an idea or want to contact me? get in touch below</p>
+
+            {/* <div>
+              <div className="flex justify-between">
+              <button>Send a mail</button>
+              <button>&gt;</button>
+              </div>
+
+            </div> */} 
+            {/* form div above */}
+            
             <div>
-              
+              <p>Go the fast way, hit me</p>
+              <button></button>
             </div>
           </section>
-
         </main>
         <footer className=" max-w-[72rem] mx-auto border-t border-t-neutral-800 p-2">
           <section className="">
