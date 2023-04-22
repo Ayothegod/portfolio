@@ -2,13 +2,15 @@ import Header from "@/components/Header";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { SiTypescript } from "react-icons/si";
 import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
 import Footer from "@/components/Footer";
-import ConnectLinks from "@/components/ConnectLinks";
 import { BsLinkedin } from "react-icons/bs";
-import { FaTwitterSquare ,FaInstagramSquare,FaGithubSquare} from "react-icons/fa";
+import {
+  FaTwitterSquare,
+  FaInstagramSquare,
+  FaGithubSquare,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -71,7 +73,10 @@ export default function Home() {
             </aside>
           </section>
 
-          <section id="projects" className="max-w-[60rem] mx-auto mt-8 pb-4 border-b border-b-neutral-800">
+          <section
+            id="projects"
+            className="max-w-[60rem] mx-auto mt-8 pb-4 border-b border-b-neutral-800"
+          >
             <h2 className="font-bold text-white text-2xl mb-2">Projects</h2>
             <p className="">
               I like to build things i will use or find interesting. It may be
@@ -100,10 +105,26 @@ export default function Home() {
             <div className="">
               <p>Go the fast way, hit me</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 mt-4">
-                <ConnectLinks icon='BsLinkedin' BsLinkedin={BsLinkedin}/>
-                <ConnectLinks/>
-                <ConnectLinks/>
-                <ConnectLinks/>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-blue-700">
+                    <BsLinkedin /> <p>Linkedin</p>
+                  </button>
+                </Link>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-blue-400 ">
+                    <FaTwitterSquare /> <p>Twitter</p>
+                  </button>
+                </Link>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-neutral-700 ">
+                    <FaGithubSquare /> <p>Github</p>
+                  </button>
+                </Link>
+                <Link href="/">
+                  <button className="flex items-center gap-2 hover:text-red-500 ">
+                    <FaInstagramSquare /> <p>Instagram</p>
+                  </button>
+                </Link>
               </div>
             </div>
           </section>
