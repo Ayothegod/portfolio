@@ -79,6 +79,14 @@ export default function Home() {
               desc="An Ecommerce app with a cms (Sanity Cms) with checkout available"
             />
           </section>
+
+          <section>
+            <h2>Get in touch</h2>
+            <div>
+              
+            </div>
+          </section>
+
         </main>
         <footer className=" max-w-[72rem] mx-auto border-t border-t-neutral-800 p-2">
           <section className="">
