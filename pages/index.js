@@ -100,14 +100,16 @@ export default function Home() {
               desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
               image={dummyImage}
             />
-            {/* <Project
+            <Project
               name="Note Taker"
               desc="A Note taking app.with realtime database, crud functionality and user signup"
+              image={dummyImage2}
               />
             <Project
               name="Zoommmm"
               desc="Transport and ride hailing at its best. Lets take youi to your destination"
-              /> */}
+              image={dummyImage3}
+              />
               </div>
           </section>
 
