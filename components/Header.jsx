@@ -27,7 +27,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <ul className={open ? "hidden sm:flex" : "flex justify-end w-full text-sm items-end gap-6 mt-4 sm:mt-0 "}>
+      <ul className={open ? "hidden sm:flex" : "flex justify-end w-full text-sm items-end gap-6 m-2 sm:m-0  "}>
         <li className="text-md hover:text-green-700 ">
           <Link href="/">/Home</Link>
         </li>

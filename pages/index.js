@@ -11,6 +11,7 @@ import {
   FaInstagramSquare,
   FaGithubSquare,
 } from "react-icons/fa";
+import aboutImage from "@/assets/p4n2ny.jpg"
 
 export default function Home() {
   return (
@@ -29,7 +30,11 @@ export default function Home() {
         </nav>
         <main className="px-4">
           <section className="max-w-[60rem] mx-auto mt-4">
-            <h1 className="font-bold text-white text-2xl mb-2">
+            <div className="w-48 md:w-60 rounded-lg overflow-hidden">
+
+            <Image src={aboutImage} alt="aboutImage" className="h-full w-full"/>
+            </div>
+            <h1 className="font-bold text-white text-2xl mb-2 mt-8">
               Hi, I&apos;m Ayomide
             </h1>
             <p className="">
