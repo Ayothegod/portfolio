@@ -6,6 +6,7 @@ import { SiTypescript } from "react-icons/si";
 import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
 import Footer from "@/components/Footer";
+import ConnectLinks from "@/components/ConnectLinks";
 import { BsLinkedin } from "react-icons/bs";
 import { FaTwitterSquare ,FaInstagramSquare,FaGithubSquare} from "react-icons/fa";
 
@@ -99,26 +100,10 @@ export default function Home() {
             <div className="">
               <p>Go the fast way, hit me</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 mt-4">
-                <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-blue-700 text-xl">
-                    <BsLinkedin /> <p>Linkedin</p>
-                  </button>
-                </Link>
-                <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-neutral-700 text-xl">
-                    <FaGithubSquare /> <p>Github</p>
-                  </button>
-                </Link>
-                <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-red-400  text-xl">
-                    <FaInstagramSquare /> <p>Instagram</p>
-                  </button>
-                </Link>
-                <Link href="/">
-                  <button className="flex items-center gap-2 hover:text-blue-400 text-xl">
-                    <FaTwitterSquare /> <p>Twitter</p>
-                  </button>
-                </Link>
+                <ConnectLinks icon='BsLinkedin' BsLinkedin={BsLinkedin}/>
+                <ConnectLinks/>
+                <ConnectLinks/>
+                <ConnectLinks/>
               </div>
             </div>
           </section>
