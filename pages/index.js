@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-black text-[#999] py-1">
-        <nav className="sticky top-0 border-b border-b-neutral-800 bg-dark bg-opacity-70 backdrop-blur-lg ">
+        <nav className="sticky top-0 border-b border-b-neutral-800  backdrop-blur-lg ">
           <section className="max-w-[60rem] mx-auto ">
             <Header />
           </section>
@@ -46,7 +46,7 @@ export default function Home() {
           </section>
 
           <section id="tools" className="max-w-[60rem] mx-auto mt-8">
-            <h1 className="font-bold text-white text-2xl mb-2">Tools</h1>
+            <h1 className="font-bold text-white text-2xl mb-2 ">Tools</h1>
             <p className="">
               Over the course of my coding Journey i have come across many tools
               and services. My Prim ary Stack includes React on the frontend and
@@ -77,7 +77,7 @@ export default function Home() {
             id="projects"
             className="max-w-[60rem] mx-auto mt-8 pb-4 border-b border-b-neutral-800"
           >
-            <h2 className="font-bold text-white text-2xl mb-2 mt-24">Projects</h2>
+            <h2 className="font-bold text-white text-2xl mb-2 ">Projects</h2>
             <p className="">
               I like to build things i will use or find interesting. It may be
               stuff i find on the internet or things am genuinly need.Here are a
