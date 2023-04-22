@@ -6,12 +6,13 @@ import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
 import Footer from "@/components/Footer";
 import { BsLinkedin } from "react-icons/bs";
+import { MdArrowForward } from "react-icons/md";
 import {
   FaTwitterSquare,
   FaInstagramSquare,
   FaGithubSquare,
 } from "react-icons/fa";
-import aboutImage from "@/assets/p4n2ny.jpg"
+import aboutImage from "@/assets/p4n2ny.jpg";
 import FutureTools from "@/components/FutureTools";
 
 export default function Home() {
@@ -32,8 +33,11 @@ export default function Home() {
         <main className="px-4">
           <section className="max-w-[60rem] mx-auto mt-4">
             <div className="w-48 md:w-60 rounded-lg overflow-hidden">
-
-            <Image src={aboutImage} alt="aboutImage" className="h-full w-full"/>
+              <Image
+                src={aboutImage}
+                alt="aboutImage"
+                className="h-full w-full"
+              />
             </div>
             <h1 className="font-bold text-white text-2xl mb-2 mt-8">
               Hi, I&apos;m Ayomide
@@ -60,15 +64,18 @@ export default function Home() {
               use below.
             </p>
             <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 gap-y-4 ">
-              <IndTool/>
+              <IndTool />
             </aside>
             <aside className="w-full border rounded-lg border-neutral-500 py-4 px-2 mt-4">
-              <p>
-                Things i am currently learning on plan to learn in the near
-                future
-              </p>
+              <div className="flex items-center gap-2">
+                <MdArrowForward className="h-5 w-5"/>
+                <p>
+                  Things i am currently learning on plan to learn in the near
+                  future
+                </p>
+              </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 gap-y-4 px-2">
-                <FutureTools/>
+                <FutureTools />
               </div>
             </aside>
           </section>
