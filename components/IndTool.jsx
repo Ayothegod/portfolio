@@ -4,7 +4,6 @@ import {SiTypescript,SiFirebase,SiSupabase,SiMongodb,SiChakraui,SiPrisma,SiGraph
 import {BsGit} from "react-icons/bs"
 import {TbBrandGolang,TbBrandTypescript} from "react-icons/tb"
 
-//HiMailOpen,HiMail,
 
 const IndTool = () => {
   return (
@@ -18,8 +17,32 @@ const IndTool = () => {
         <h3 className="font-medium">Nodejs</h3>
       </div>
       <div className=" flex items-center hover:text-green-600 gap-1 cursor-pointer">
-        <FaNodeJs className=" text-lg"/>
-        <h3 className="font-medium">Nodejs</h3>
+        <BsGit className=" text-lg"/>
+        <h3 className="font-medium">Git</h3>
+      </div>
+      <div className=" flex items-center hover:text-green-600 gap-1 cursor-pointer">
+        <SiTailwindcss className=" text-lg"/>
+        <h3 className="font-medium">TailwindCSS</h3>
+      </div>
+      <div className=" flex items-center hover:text-green-600 gap-1 cursor-pointer">
+        <SiPrisma className=" text-lg"/>
+        <h3 className="font-medium">SiPrisma</h3>
+      </div>
+      <div className=" flex items-center hover:text-green-600 gap-1 cursor-pointer">
+        <SiPostgresql className=" text-lg"/>
+        <h3 className="font-medium">PostgreSQL</h3>
+      </div>
+      <div className=" flex items-center hover:text-green-600 gap-1 cursor-pointer">
+        <SiMongodb className=" text-lg"/>
+        <h3 className="font-medium">MongoDB</h3>
+      </div>
+      <div className=" flex items-center hover:text-green-600 gap-1 cursor-pointer">
+        <SiChakraui className=" text-lg"/>
+        <h3 className="font-medium">ChakraUI</h3>
+      </div>
+      <div className=" flex items-center hover:text-green-600 gap-1 cursor-pointer">
+        <SiFirebase className=" text-lg"/>
+        <h3 className="font-medium">Firebase</h3>
       </div>
       
     </>

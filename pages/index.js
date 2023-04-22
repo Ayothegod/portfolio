@@ -12,6 +12,7 @@ import {
   FaGithubSquare,
 } from "react-icons/fa";
 import aboutImage from "@/assets/p4n2ny.jpg"
+import FutureTools from "@/components/FutureTools";
 
 export default function Home() {
   return (
@@ -58,7 +59,7 @@ export default function Home() {
               Nodejs on the backend. I have listed some of the languages/tools i
               use below.
             </p>
-            <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2">
+            <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 gap-y-4 ">
               <IndTool/>
             </aside>
             <aside className="w-full border rounded-lg border-neutral-500 py-4 px-2 mt-4">
@@ -66,8 +67,8 @@ export default function Home() {
                 Things i am currently learning on plan to learn in the near
                 future
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 space-y-2 px-2">
-                <IndTool/>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 gap-y-4 px-2">
+                <FutureTools/>
               </div>
             </aside>
           </section>
