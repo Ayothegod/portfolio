@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Custom404() {
