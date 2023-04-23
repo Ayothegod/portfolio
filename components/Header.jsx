@@ -10,7 +10,7 @@ import {IoIosArrowForward} from "react-icons/io"
 import {MdArrowForwardIos} from "react-icons/md"
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const openMenu = () => {
     setOpen(!open);         
   };
