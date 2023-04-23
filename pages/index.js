@@ -71,7 +71,7 @@ export default function Home() {
             </aside>
             <aside className="w-full border rounded-lg border-neutral-500 py-4 px-2 mt-4">
               <div className="flex items-center gap-2">
-                <MdArrowForward className="h-5 w-5"/>
+                <MdArrowForward className="h-5 w-5" />
                 <p>
                   Things i am currently learning on plan to learn in the near
                   future
@@ -94,23 +94,22 @@ export default function Home() {
               couple of them, you can find other one&apos;s on my github.
             </p>
             <div className="flex flex-col gap-6 mt-4">
-              
-            <Project
-              name="Shop It"
-              desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
-              image={dummyImage}
-            />
-            <Project
-              name="Note Taker"
-              desc="A Note taking app.with realtime database, crud functionality and user signup"
-              image={dummyImage2}
+              <Project
+                name="Shop It"
+                desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
+                image={dummyImage}
               />
-            <Project
-              name="Zoommmm"
-              desc="Transport and ride hailing at its best. Lets take youi to your destination"
-              image={dummyImage3}
+              <Project
+                name="Note Taker"
+                desc="A Note taking app.with realtime database, crud functionality and user signup"
+                image={dummyImage2}
               />
-              </div>
+              <Project
+                name="Zoommmm"
+                desc="Transport and ride hailing at its best. Lets take youi to your destination"
+                image={dummyImage3}
+              />
+            </div>
           </section>
 
           <section className="max-w-[60rem] mx-auto mt-4 pb-4">
