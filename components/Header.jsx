@@ -28,16 +28,16 @@ const Header = () => {
         </div>
       </div>
       <ul className={open ? "hidden sm:flex sm:gap-8" : "flex justify-end w-full text-sm items-end gap-6 m-2 sm:m-0 "}>
-        <li className="text-md hover:text-green-700 ">
+        <li className="text-md hover:text-green-600 ">
           <Link href="/">/Home</Link>
         </li>
-        <li className="text-md hover:text-green-700">
+        <li className="text-md hover:text-green-600">
           <Link href="#tools">/Tools</Link>
         </li>
-        <li className="text-md hover:text-green-700">
+        <li className="text-md hover:text-green-600">
           <Link href="#projects">/Projects</Link>
         </li>
-        <li className="text-md hover:text-green-700">
+        <li className="text-md hover:text-green-600">
           <Link href="/blog">/Blog</Link>
         </li>
       </ul>
@@ -46,4 +46,3 @@ const Header = () => {
 };
 
 export default Header;
-//assets\icons8-github (1).svg
