@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import aboutImage from "@/assets/p4n2ny.jpg";
+import aboutImage from "@/assets/20230330_24542.jpg";
 import Head from "next/head";
 
 const Blog = () => {
@@ -23,7 +23,7 @@ const Blog = () => {
       </nav>
 
       <section className="max-w-[60rem] mx-auto mt-4 pb-10 px-4">
-        <div className="w-48 md:w-60 rounded-lg overflow-hidden">
+        <div className="w-24 md:w-48 rounded-lg overflow-hidden">
           <Image src={aboutImage} alt="aboutImage" className="h-full w-full" />
         </div>
         <h1 className="text-2xl md:text-3xl font-bold text-white ">Blog</h1>

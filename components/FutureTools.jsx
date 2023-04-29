@@ -25,10 +25,10 @@ const FutureTools = () => {
         <SiSupabase className=" text-lg"/>
         <h3 className="font-medium">Supabase</h3>
       </div>
-      <div className=" flex items-center hover:text-[#00A7D0] gap-1 cursor-pointer">
+      {/* <div className=" flex items-center hover:text-[#00A7D0] gap-1 cursor-pointer">
         <TbBrandGolang className=" text-lg"/>
         <h3 className="font-medium">Golang</h3>
-      </div>
+      </div> */}
     </>
   );
 };

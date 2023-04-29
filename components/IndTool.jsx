@@ -36,10 +36,10 @@ const IndTool = () => {
         <SiMongodb className=" text-lg"/>
         <h3 className="font-medium">MongoDB</h3>
       </div>
-      <div className=" flex items-center hover:text-[#29B9AD] gap-1 cursor-pointer">
+      {/* <div className=" flex items-center hover:text-[#29B9AD] gap-1 cursor-pointer">
         <SiChakraui className=" text-lg"/>
         <h3 className="font-medium">ChakraUI</h3>
-      </div>
+      </div> */}
       <div className=" flex items-center hover:text-[#F7C62D] gap-1 cursor-pointer">
         <SiFirebase className=" text-lg"/>
         <h3 className="font-medium">Firebase</h3>

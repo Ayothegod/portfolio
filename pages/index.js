@@ -99,21 +99,21 @@ export default function Home() {
                 name="Shop It"
                 desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
                 image={noteApp}
-                link="note-app-ruddy.vercel.app/"
+                projectlink="note-app-ruddy.vercel.app/"
                 github="github.com/Ayothegod/note-tut"
                 />
               <Project
                 name="Note Taker"
                 desc="A Note taking app.with realtime database, crud functionality and user signup"
                 image={netflixClone}
-                link="fullstack-netflix-theta.vercel.app"
+                projectlink="fullstack-netflix-theta.vercel.app"
                 github="github.com/Ayothegod/fullstack-netflix"
                 />
               <Project
                 name="Simple Amazon Clone"
                 desc="Transport and ride hailing at its best. Lets take youi to your destination"
                 image={amazonClone}
-                link="2022-amazon-clone.vercel.app"
+                projectlink="2022-amazon-clone.vercel.app"
                 github="github.com/Ayothegod/2022-amazonClone"
               />
             </div>
@@ -125,27 +125,27 @@ export default function Home() {
 
             <div className="">
               <p>Go the fast way, hit me</p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 mt-4">
-                <Link href="/">
+              <div className="grid grid-cols-2 sm:grid-cols-4 mt-4 gap-y-2">
+                <Link href="https://linkedin.com/in/aiiomide">
                   <button className="flex items-center gap-2 hover:text-blue-700">
                     <BsLinkedin /> <p>Linkedin</p>
                   </button>
                 </Link>
-                <Link href="/">
+                <Link href="https://twitter.com/aiiomide">
                   <button className="flex items-center gap-2 hover:text-blue-400 ">
                     <FaTwitterSquare /> <p>Twitter</p>
                   </button>
                 </Link>
-                <Link href="/">
+                <Link href="https://github.com/ayothegod">
                   <button className="flex items-center gap-2 hover:text-neutral-700 ">
                     <FaGithubSquare /> <p>Github</p>
                   </button>
                 </Link>
-                <Link href="/">
+                {/* <Link href="/">
                   <button className="flex items-center gap-2 hover:text-red-500 ">
                     <FaInstagramSquare /> <p>Instagram</p>
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </section>
