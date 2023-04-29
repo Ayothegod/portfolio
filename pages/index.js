@@ -6,13 +6,15 @@ import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
 import Footer from "@/components/Footer";
 import { BsLinkedin } from "react-icons/bs";
-import { MdArrowForward } from "react-icons/md";
+import { MdArrowForward,MdOutlineWavingHand } from "react-icons/md";
 import {
   FaTwitterSquare,
   FaInstagramSquare,
   FaGithubSquare,
 } from "react-icons/fa";
 import aboutImage from "@/assets/20230330_24542.jpg";
+import wavingHand from "@/assets/icons8-waving-hand-emoji-48.png";
+
 import FutureTools from "@/components/FutureTools";
 import noteApp from "@/assets/Screenshot (187).png";
 import netflixClone from "@/assets/Screenshot (191).png";
@@ -37,7 +39,7 @@ export default function Home() {
         </nav>
 
         <main className="px-4">
-          
+
           <section className="max-w-[60rem] mx-auto mt-4">
             <div className="w-24 md:w-48 rounded-lg overflow-hidden">
               <Image
@@ -46,8 +48,8 @@ export default function Home() {
                 className="h-full w-full"
               />
             </div>
-            <h1 className="font-bold text-white text-2xl mb-2 mt-8">
-              Hi, I&apos;m Ayomide
+            <h1 className="font-bold text-white text-2xl mb-2 mt-8 flex gap-2">
+              Hi, I&apos;m Ayomide <MdOutlineWavingHand className="text-green-600 animate-bounce w-10 h-10"/>
             </h1>
             <p className="">
               I&apos;m a{" "}
