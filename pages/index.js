@@ -12,11 +12,12 @@ import {
   FaInstagramSquare,
   FaGithubSquare,
 } from "react-icons/fa";
-import aboutImage from "@/assets/p4n2ny.jpg";
+import aboutImage from "@/assets/20230330_24542.jpg";
 import FutureTools from "@/components/FutureTools";
-import dummyImage from "@/assets/Screenshot (155).png";
-import dummyImage2 from "@/assets/20220519_195303.jpg";
-import dummyImage3 from "@/assets/20220526_055846.jpg";
+import noteApp from "@/assets/Screenshot (187).png";
+import netflixClone from "@/assets/Screenshot (191).png";
+import amazonClone from "@/assets/Screenshot (193).png";
+import miniGallery from "@/assets/Screenshot (195).png";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
         </nav>
         <main className="px-4">
           <section className="max-w-[60rem] mx-auto mt-4">
-            <div className="w-48 md:w-60 rounded-lg overflow-hidden">
+            <div className="w-24 md:w-48 rounded-lg overflow-hidden">
               <Image
                 src={aboutImage}
                 alt="aboutImage"
@@ -97,17 +98,23 @@ export default function Home() {
               <Project
                 name="Shop It"
                 desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
-                image={dummyImage}
-              />
+                image={noteApp}
+                link="note-app-ruddy.vercel.app/"
+                github="github.com/Ayothegod/note-tut"
+                />
               <Project
                 name="Note Taker"
                 desc="A Note taking app.with realtime database, crud functionality and user signup"
-                image={dummyImage2}
-              />
+                image={netflixClone}
+                link="fullstack-netflix-theta.vercel.app"
+                github="github.com/Ayothegod/fullstack-netflix"
+                />
               <Project
-                name="Zoommmm"
+                name="Simple Amazon Clone"
                 desc="Transport and ride hailing at its best. Lets take youi to your destination"
-                image={dummyImage3}
+                image={amazonClone}
+                link="2022-amazon-clone.vercel.app"
+                github="github.com/Ayothegod/2022-amazonClone"
               />
             </div>
           </section>

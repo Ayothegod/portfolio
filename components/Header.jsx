@@ -1,7 +1,4 @@
-import NodeIcon from "@/assets/icons8-node-js.svg";
-import gitpng from "@/assets/icons8-github-30.png";
-import gitsvg from "@/assets/icons8-github.svg";
-import gitsvg1 from "@/assets/icons8-github (1).svg";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
