@@ -13,7 +13,7 @@ import { BsLinkedin } from "react-icons/bs";
 
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const openMenu = () => {
     setOpen(!open);

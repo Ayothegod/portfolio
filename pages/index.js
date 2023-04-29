@@ -29,12 +29,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-black text-[#999] py-1">
+
         <nav className="sticky top-0 border-b border-b-neutral-800  backdrop-blur-lg ">
           <section className="max-w-[60rem] mx-auto ">
             <Header />
           </section>
         </nav>
+
         <main className="px-4">
+          
           <section className="max-w-[60rem] mx-auto mt-4">
             <div className="w-24 md:w-48 rounded-lg overflow-hidden">
               <Image
@@ -55,7 +58,7 @@ export default function Home() {
               tech and tools and i am a huge learner. I am huge on some{" "}
               <span className="text-green-700">stuff</span> : AI, Drone
               Technology, International Politics etc and i feel ML is boring
-              LoL.
+              lol.
             </p>
           </section>
 
@@ -63,7 +66,7 @@ export default function Home() {
             <h1 className="font-bold text-white text-2xl mb-2 ">Tools</h1>
             <p className="">
               Over the course of my coding Journey i have come across many tools
-              and services. My Prim ary Stack includes React on the frontend and
+              and services. My Primary Stack includes React on the frontend and
               Nodejs on the backend. I have listed some of the languages/tools i
               use below.
             </p>
@@ -96,23 +99,26 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-6 mt-4">
               <Project
-                name="Shop It"
-                desc="An Ecommerce app with a cms (Sanity Cms) with checkout available. "
+                name="Note App"
+                desc="Create, update and delete notes. local storage to save created notes."
                 image={noteApp}
+                first={true}
                 projectlink="note-app-ruddy.vercel.app/"
                 github="github.com/Ayothegod/note-tut"
                 />
               <Project
-                name="Note Taker"
-                desc="A Note taking app.with realtime database, crud functionality and user signup"
+                name="Netflix Clone"
+                desc="A simple amazon clone, with firebase for sign-in. include preview movie, save favourite, delete favourite, sign-out and more."
                 image={netflixClone}
+                first={false}
                 projectlink="fullstack-netflix-theta.vercel.app"
                 github="github.com/Ayothegod/fullstack-netflix"
                 />
               <Project
                 name="Simple Amazon Clone"
-                desc="Transport and ride hailing at its best. Lets take youi to your destination"
+                desc="A simple Amazon e-commerce app, using react and include cart."
                 image={amazonClone}
+                first={true}
                 projectlink="2022-amazon-clone.vercel.app"
                 github="github.com/Ayothegod/2022-amazonClone"
               />
@@ -149,6 +155,7 @@ export default function Home() {
               </div>
             </div>
           </section>
+
         </main>
         <Footer />
       </main>

@@ -3,20 +3,24 @@ import Link from "next/link"
 import {AiFillGithub} from "react-icons/ai"
 import {FaTelegramPlane} from "react-icons/fa"
 
-const Project = ({name,desc,image,projectlink,github}) => {
+const Project = ({name,desc,image,projectlink,github,first}) => {
   return (
    
-            <div className=" grid grid-cols-1 sm:grid-cols-1 gap-8 ">
-              <div className="flex flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-1 gap-8 max-w-[50rem] mx-auto">
+
+              <div className={`${first ? "flex flex-col sm:flex-row gap-y-4 gap-x-8 sm:items-center" : " flex flex-col sm:flex-row-reverse gap-y-4 gap-x-8 sm:items-center" }`}>
+
+
                 <div className="h-48 w-full sm:w-1/2 sm:h-60 md:h-72 rounded-lg overflow-hidden border border-neutral-800">
+
                   <Image
                     src={image}
                     alt="dummy"
                     className="w-full h-full hover:scale-110 transition-transform duration-300 ease-in-out object-cover object-center"
-                  />
+                    />
                 </div>
 
-                <div className="flex flex-col gap-2 w-full sm:w-3/5">
+                <div className="flex flex-col gap-2 w-full sm:w-1/2">
                   <h3 className="font-semibold text-white text-lg sm:text-2xl leading-none">
                     {name}
                   </h3>
