@@ -46,7 +46,7 @@ export default function Home() {
             </div>
 
             <h1 className="font-bold text-white text-2xl mb-2 mt-8 flex gap-2">
-              Hi, I&apos;m Ayomide A<MdOutlineWavingHand className="text-green-600 animate-bounce w-10 h-10" />
+              Hi, I&apos;m Ayomide Adebisi<MdOutlineWavingHand className="text-green-600 animate-bounce w-10 h-10" />
             </h1>
 
             <p className="">
