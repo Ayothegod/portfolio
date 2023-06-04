@@ -119,7 +119,7 @@ export default function Home() {
           </section>
 
           <section className="max-w-[60rem] mx-auto mt-4 pb-4 text-center">
-            <h2 className="text-white font-medium text-2xl ">Connect</h2>
+            <h2 className="text-white font-medium text-3xl ">Connect</h2>
             <p>get in touch below</p>
             <div className="my-2">
               <input type="text" />
@@ -134,7 +134,7 @@ export default function Home() {
                   <button className="flex items-center gap-2 text-blue-400 "> <FaTwitterSquare />
                   </button>
                 </Link>
-                <Link href="https://mail.google.com/">
+                <Link href="https://mail.google.com/mail/?view=cm&source=mailto&to=heyayomideadebisi@gmail.com">
                   <button className="flex items-center gap-2 text-neutral-100 "><FaGithubSquare />
                   </button>
                 </Link>
