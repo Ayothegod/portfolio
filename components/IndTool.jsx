@@ -32,6 +32,10 @@ const IndTool = () => {
         <SiPostgresql className=" text-lg"/>
         <h3 className="font-medium">PostgreSQL</h3>
       </div>
+      <div className=" flex items-center hover:text-[#3CC88C] gap-1 cursor-pointer">
+        <SiSupabase className=" text-lg"/>
+        <h3 className="font-medium">Supabase</h3>
+      </div>
       {/* <div className=" flex items-center hover:text-[#118D4D] gap-1 cursor-pointer">
         <SiMongodb className=" text-lg"/>
         <h3 className="font-medium">MongoDB</h3>

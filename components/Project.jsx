@@ -7,7 +7,7 @@ const Project = ({ name, desc, image, projectlink, github, first }) => {
   return (
 
     <div className="grid grid-cols-1 sm:grid-cols-1 gap-8 max-w-[50rem] mx-auto">
-      {/* <div className={`${first ? "flex flex-col sm:flex-row gap-y-4 gap-x-8 sm:items-center" : " flex flex-col sm:flex-row-reverse gap-y-4 gap-x-8 sm:items-center"}`}>
+      <div className={`${first ? "flex flex-col sm:flex-row gap-y-4 gap-x-8 sm:items-center" : " flex flex-col sm:flex-row-reverse gap-y-4 gap-x-8 sm:items-center"}`}>
 
 
         <div className="h-48 w-full sm:w-1/2 sm:h-60 md:h-72 rounded-lg overflow-hidden border border-neutral-800">
@@ -37,7 +37,7 @@ const Project = ({ name, desc, image, projectlink, github, first }) => {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
