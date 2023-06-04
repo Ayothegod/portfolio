@@ -6,7 +6,7 @@ import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
 import Footer from "@/components/Footer";
 import { BsLinkedin } from "react-icons/bs";
-import { MdArrowForward,MdOutlineWavingHand } from "react-icons/md";
+import { MdArrowForward, MdOutlineWavingHand } from "react-icons/md";
 import {
   FaTwitterSquare,
   FaInstagramSquare,
@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black text-[#999] py-1">
+      <main className="bg-black text-gray-300 py-1">
 
         <nav className="sticky top-0 border-b border-b-neutral-800  backdrop-blur-lg ">
           <section className="max-w-[60rem] mx-auto ">
@@ -42,24 +42,19 @@ export default function Home() {
 
           <section className="max-w-[60rem] mx-auto mt-4">
             <div className="w-24 md:w-48 rounded-lg overflow-hidden">
-              <Image
-                src={aboutImage}
-                alt="aboutImage"
-                className="h-full w-full"
-              />
+              <Image src={aboutImage} alt="aboutImage" className="h-full w-full" />
             </div>
+
             <h1 className="font-bold text-white text-2xl mb-2 mt-8 flex gap-2">
-              Hi, I&apos;m Ayomide <MdOutlineWavingHand className="text-green-600 animate-bounce w-10 h-10"/>
+              Hi, I&apos;m Ayomide <MdOutlineWavingHand className="text-green-600 animate-bounce w-10 h-10" />
             </h1>
+
             <p className="">
               I&apos;m a{" "}
-              <span className="text-green-700">Software Developer</span>. I
-              enjoy <span className="text-green-700">Building </span> things and
-              seeing new things come to life with code. I do enjoy{" "}
-              <span className="text-green-700">experimenting</span> a lot on new
-              tech and tools and i am a huge learner. I am huge on some{" "}
-              <span className="text-green-700">stuff</span> : AI, Drone
-              Technology, International Politics etc and i feel ML is boring
+              <span className="text-purple-700">software developer</span>. I
+              enjoy building new stuff. I do enjoy experimentinga lot on new
+              tech and tools and i am a huge learner. I also spend time on AI, Drone
+              Technology, International Politics and i feel ML is boring
               lol.
             </p>
           </section>
@@ -67,10 +62,7 @@ export default function Home() {
           <section id="tools" className="max-w-[60rem] mx-auto mt-8">
             <h1 className="font-bold text-white text-2xl mb-2 ">Tools</h1>
             <p className="">
-              Over the course of my coding Journey i have come across many tools
-              and services. My Primary Stack includes React on the frontend and
-              Nodejs on the backend. I have listed some of the languages/tools i
-              use below.
+              Over the course of my coding Journey i have come across many  tools and services. my go-to stack involves;
             </p>
             <aside className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 gap-y-4 ">
               <IndTool />
@@ -79,8 +71,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <MdArrowForward className="h-5 w-5" />
                 <p>
-                  Things i am currently learning on plan to learn in the near
-                  future
+                  Things i plan to learn in the near future.
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-x-2 gap-y-4 px-2">
@@ -107,7 +98,7 @@ export default function Home() {
                 first={true}
                 projectlink="note-app-ruddy.vercel.app/"
                 github="github.com/Ayothegod/note-tut"
-                />
+              />
               <Project
                 name="Netflix Clone"
                 desc="A simple amazon clone, with firebase for sign-in. include preview movie, save favourite, delete favourite, sign-out and more."
@@ -115,7 +106,7 @@ export default function Home() {
                 first={false}
                 projectlink="fullstack-netflix-theta.vercel.app"
                 github="github.com/Ayothegod/fullstack-netflix"
-                />
+              />
               <Project
                 name="Simple Amazon Clone"
                 desc="A simple Amazon e-commerce app, using react and include cart."
@@ -127,26 +118,24 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="max-w-[60rem] mx-auto mt-4 pb-4">
+          <section className="max-w-[60rem] mx-auto mt-4 pb-4 text-center">
             <h2 className="text-white font-medium text-2xl ">Connect</h2>
-            <p>Have an idea or want to contact me? get in touch below</p>
-
+            <p>get in touch below</p>
+            <div className="my-2">
+              <input type="text" />
+            </div>
             <div className="">
-              <p>Go the fast way, hit me</p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 mt-4 gap-y-2">
+              <div className="flex items-center justify-around mt-4 text-3xl">
                 <Link href="https://linkedin.com/in/aiiomide">
-                  <button className="flex items-center gap-2 hover:text-blue-700">
-                    <BsLinkedin /> <p>Linkedin</p>
+                  <button className="flex items-center gap-2 text-blue-700"> <BsLinkedin />
                   </button>
                 </Link>
                 <Link href="https://twitter.com/aiiomide">
-                  <button className="flex items-center gap-2 hover:text-blue-400 ">
-                    <FaTwitterSquare /> <p>Twitter</p>
+                  <button className="flex items-center gap-2 text-blue-400 "> <FaTwitterSquare />
                   </button>
                 </Link>
-                <Link href="https://github.com/ayothegod">
-                  <button className="flex items-center gap-2 hover:text-neutral-700 ">
-                    <FaGithubSquare /> <p>Github</p>
+                <Link href="https://mail.google.com/">
+                  <button className="flex items-center gap-2 text-neutral-100 "><FaGithubSquare />
                   </button>
                 </Link>
                 {/* <Link href="/">

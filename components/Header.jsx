@@ -21,38 +21,30 @@ const Header = () => {
 
   return (
     <div
-      className={`flex flex-col sm:flex-row sm:justify-between items-center p-2  ${open ? "h-12 sm:h-12" : "h-20 sm:h-12"}`}
+      className={`flex flex-col sm:flex-row sm:justify-between items-center p-2 `}
     >
-
       <div className="flex justify-between items-center w-full">
-        <h2 className="font-bold text-2xl sm:text-2xl text-white">Ayo.Web</h2>
+        <h2 className="font-bold text-2xl sm:text-2xl text-white">Ayomide.</h2>
 
         <div>
-          <ul
-            className="sm:hidden font-medium cursor-pointer text-green-600 flex items-center gap-2"
-            onClick={openMenu}
-          >
-            <MdArrowForwardIos className={!open && "hidden"} />
-            <AiOutlineDown className={open && "hidden"} />
-            <li>MENU</li>
-          </ul>
+          <button className="text-white sm:hidden">MENU</button>
         </div>
       </div>
 
       <ul
-        className={`flex items-end gap-6  justify-end w-full text-sm  flex-2 m-2 sm:m-0 transition duration-300 ease-in-out ${open ? "-translate-y-40 sm:translate-y-0": "translate-y-0 sm:translate-y-0"}`}
+        className={`hidden sm:flex sm:items-end gap-6  justify-end w-full text-sm  flex-2 m-2 sm:m-0 transition duration-300 ease-in-out`}
       >
         <li className="text-lg hover:text-green-600 ">
-          <Link href="/">/Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li className="text-lg hover:text-green-600">
-          <Link href="#tools">/Tools</Link>
+          <Link href="#tools">Tools</Link>
         </li>
         <li className="text-lg hover:text-green-600">
-          <Link href="#projects">/Projects</Link>
+          <Link href="#projects">Projects</Link>
         </li>
         <li className="text-lg hover:text-green-600">
-          <Link href="/blog">/Blog</Link>
+          <Link href="/blog">Blog</Link>
         </li>
       </ul>
     </div>
