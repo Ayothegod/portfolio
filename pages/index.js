@@ -28,11 +28,11 @@ export default function Home() {
               <Image src={aboutImage} alt="aboutImage" className="h-full w-full" />
             </div>
 
-            <h1 className="font-medium font-russo text-purple-600 text-5xl md:text-6xl mb-2 mt-8 text-center">
+            <h1 className="font-medium font-russo text-purple-600 text-3xl sm:text-4xl md:text-6xl mb-2 mt-8 text-center">
               Ayomide Adebisi
             </h1>
             {/* orbitron is so alien and beautiful */}
-            <p className=" font-josefin">
+            <p className=" ">
               I&apos;m a{" "}
               <span className="">software developer with focus on frontend</span>. I
               enjoy building new stuff. I do enjoy experimenting a lot on new
