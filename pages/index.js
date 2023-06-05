@@ -6,20 +6,10 @@ import Project from "@/components/Project";
 import IndTool from "@/components/IndTool";
 import Footer from "@/components/Footer";
 import { BsLinkedin } from "react-icons/bs";
-import { MdArrowForward, MdOutlineWavingHand } from "react-icons/md";
-import {
-  FaTwitterSquare,
-  FaInstagramSquare,
-  FaGithubSquare,
-} from "react-icons/fa";
+import { FaTwitterSquare, FaGithubSquare, } from "react-icons/fa";
 import aboutImage from "@/assets/20230330_24542.jpg";
-import wavingHand from "@/assets/icons8-waving-hand-emoji-48.png";
+import data from "@/lib/projectData";
 
-import FutureTools from "@/components/FutureTools";
-import noteApp from "@/assets/Screenshot (187).png";
-import netflixClone from "@/assets/Screenshot (191).png";
-import amazonClone from "@/assets/Screenshot (193).png";
-import miniGallery from "@/assets/Screenshot (195).png";
 
 export default function Home() {
   return (
@@ -38,10 +28,9 @@ export default function Home() {
           </section>
         </nav>
 
-        <main className="px-4">
-
-          <section className="max-w-[60rem] mx-auto mt-4">
-            <div className="w-24 md:w-48 rounded-lg overflow-hidden">
+        <main className="px-4 max-w-[50rem] mx-auto">
+          <section className=" mt-4">
+            <div className="w-24 md:w-32 rounded-lg overflow-hidden">
               <Image src={aboutImage} alt="aboutImage" className="h-full w-full" />
             </div>
 
@@ -59,7 +48,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section id="tools" className="max-w-[60rem] mx-auto mt-8">
+          <section id="tools" className=" mt-8">
             <h1 className="font-bold text-white text-2xl mb-2 ">Tools</h1>
             <p className="">
               Over the course of my coding Journey i have come across many  tools and services. my go-to stack involves;
@@ -88,33 +77,19 @@ export default function Home() {
             <p className="">
               Tools and stuff i have built, you can find other one&apos;s on my <Link href="https://github.com/Ayothegod" className="text-purple-600 underline">github</Link>
             </p>
-            <div className="flex flex-col">
-              <Project
-                name="Note App"
-                desc="Notekeeping web app."
-                image={noteApp}
-                projectlink="note-app-ruddy.vercel.app/"
-                github="github.com/Ayothegod/note-tut"
-              />
-              <Project
-                name="Netflix Clone"
-                desc="A Netflix clone with full functionality."
-                image={netflixClone}
-                projectlink="fullstack-netflix-theta.vercel.app"
-                github="github.com/Ayothegod/fullstack-netflix"
-              />
-              <Project
-                name="Simple Amazon Clone"
-                desc="A simple Amazon e-commerce app using reactjs."
-                image={amazonClone}
-                projectlink="2022-amazon-clone.vercel.app"
-                github="github.com/Ayothegod/2022-amazonClone"
-              />
-            </div>
 
+            <div className="flex items-center justify-center">
+              <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+              {
+              data.map(data => (
+                <Project key={data.name} data={data}/>
+              ))
+            }
+              </div>
+            </div>
           </section>
 
-          <section className="max-w-[60rem] mx-auto mt-4 pb-4 ">
+          <section className=" mt-4 pb-4 ">
             <h2 className="text-white font-medium text-3xl text-center">Connect</h2>
             <div className="flex gap-2 items-center justify-center">
               <p>contact form is not your thing? </p>
@@ -126,10 +101,10 @@ export default function Home() {
 
             <div className="my-2 w-full sm:w-2/3 md:w-2/3 mx-auto px-8 ">
               <div className="flex items-center justify-center flex-col gap-4">
-              <input type="text" placeholder="name" className="outline-none bg-transparent border-b border-b-gray-700 w-full placeholder:text-gray-600"/>
-              <input type="text" placeholder="email" className="outline-none bg-transparent border-b border-b-gray-700 w-full placeholder:text-gray-600"/>
-              <input type="text" placeholder="message" className="outline-none bg-transparent border-b border-b-gray-700 w-full placeholder:text-gray-600"/>
-              <button className="text-purple-600 font-bold text-2xl">submit</button>
+                <input type="text" placeholder="name" className="outline-none bg-transparent border-b border-b-gray-700 w-full placeholder:text-gray-600" />
+                <input type="text" placeholder="email" className="outline-none bg-transparent border-b border-b-gray-700 w-full placeholder:text-gray-600" />
+                <input type="text" placeholder="message" className="outline-none bg-transparent border-b border-b-gray-700 w-full placeholder:text-gray-600" />
+                <button className="text-purple-600 font-bold text-2xl">submit</button>
               </div>
             </div>
 

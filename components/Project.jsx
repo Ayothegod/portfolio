@@ -3,35 +3,34 @@ import Link from "next/link"
 import { AiFillGithub } from "react-icons/ai"
 import { FaTelegramPlane } from "react-icons/fa"
 
-const Project = ({ name, desc, image, projectlink, github, first }) => {
+const Project = ({ data }) => {
+  console.log(data);
   return (
+    <div className="">
+      <div className="my-2 md:w-92">
 
-    <div className="grid grid-cols-1 sm:grid-cols-1 gap-8 max-w-[50rem] mx-auto">
-      <div className={`${first ? "flex flex-col sm:flex-row gap-y-4 gap-x-8 sm:items-center" : " flex flex-col sm:flex-row-reverse gap-y-4 gap-x-8 sm:items-center"}`}>
-
-
-        <div className="h-48 w-full sm:w-1/2 sm:h-60 md:h-72 rounded-lg overflow-hidden border border-neutral-800">
-
-          <Image
-            src={image}
-            alt="dummy"
-            className="w-full h-full hover:scale-110 transition-transform duration-300 ease-in-out object-cover object-center"
-          />
+        <div className="h-48 sm:h-42 w-full md:h-60 rounded overflow-hidden border border-neutral-900">
+          <Image src={data.image} alt={data.name} className="w-full h-full hover:scale-110 transition-transform  duration-300 ease-in-out object-cover object-center"/>
         </div>
 
-        <div className="flex flex-col gap-2 w-full sm:w-1/2">
-          <h3 className="font-semibold text-white text-lg sm:text-2xl leading-none">
-            {name}
-          </h3>
-          <p className="sm:mt-2">
-            {desc}
-          </p>
-          <div className="flex justify-between items-center sm:mt-2 ">
-            <button className=" hover:text-neutral-300 flex text-sm md:text-lg hover:bg-neutral-800 bg-white text-black font-medium px-4 py-2 rounded-md ">
-              <Link href={`https://${projectlink}`} className="flex items-center gap-2">Website <FaTelegramPlane /> </Link>
+        <div className="mt-4">
+          <h3 className="font-medium text-purple-600 text-lg sm:text-2xl leading-none">{data.name}</h3>
+          <p className="text-[14px]"> {data.desc} </p>
+
+          <div className="flex items-center gap-2">
+          {
+            data?.tools.map((tool,ind) => (
+              <button key={ind} className="bg-neutral-800 mt-1 text-[10px] p-[2px] rounded-sm">{tool}</button>
+            ))
+          }
+        </div>
+
+          <div className="flex justify-between items-center mt-2">
+            <button className="flex text-sm bg-white text-black font-medium px-2 py-1 rounded-sm hover:bg-gray-600 hover:text-gray-100">
+              <Link href={`https://${data.projectlink}`} className="flex items-center gap-1">Website <FaTelegramPlane /> </Link>
             </button>
-            <button className=" text-neutral-300 flex text-sm md:text-lg  bg-neutral-800 hover:bg-white hover:text-black font-medium px-4 py-2 rounded-md ">
-              <Link href={`https://${github}`} className="flex items-center gap-2"  >
+            <button className="flex text-sm bg-white text-black font-medium px-2 py-1 rounded-sm hover:bg-gray-600 hover:text-gray-100">
+              <Link href={`https://${data.github}`} className="flex items-center gap-2"  >
                 Github<AiFillGithub />
               </Link>
             </button>
