@@ -1,5 +1,10 @@
 import Link from "next/link"
-
+import {
+    FaTwitterSquare,
+    FaInstagramSquare,
+    FaGithubSquare,
+  } from "react-icons/fa";
+  import { BsLinkedin } from "react-icons/bs";
 
 const MobileMenu = ({ open, setOpen }) => {
     return (
@@ -8,22 +13,36 @@ const MobileMenu = ({ open, setOpen }) => {
 
             <div className={`fixed h-[50vh] top-full right-0 left-0 transition-transform ease-in duration-1000 bg-[rgba(0,0,0,.9)] text-white p-4 border-b border-b-gray-700 ${open && "translate-y-[0vh]"}`}>
                 {/* <button onClick={() => setOpen(!open)}>Close</button> */}
-                <ul className="flex flex-col items-center justify-center h-full text-purple-600 text-2xl gap-4" onClick={() => setOpen(!open)}>
-                    <li className="">
+                <ul className="flex flex-col items-center justify-center h-full text-2xl font-medium gap-3 font-orbitron" onClick={() => setOpen(!open)}>
+                    <li className="hover:text-purple-600">
                         <Link href="/">Home</Link>
                     </li>
-                    <li className="">
+                    <li className="hover:text-purple-600">
                         <Link href="#tools">Tools</Link>
                     </li>
-                    <li className="">
+                    <li className="hover:text-purple-600">
                         <Link href="#projects">Projects</Link>
                     </li>
-                    <li className="">
+                    <li className="hover:text-purple-600 ">
                         <Link href="/blog">Blog</Link>
                     </li>
-                    <button className="text-lg text-white bg-purple-600 rounded px-4 py-1 font-semibold">
+                    <button className="text-lg text-white bg-purple-600 rounded px-4 py-1 font-semibold font-josefin">
                         <Link href="/">Resume</Link>
                     </button>
+                <div className="flex items-center justify-center gap-8 w-full mt-4 text-lg">
+                <Link href="https://linkedin.com/in/aiiomide">
+                  <button className=" text-blue-300"> <BsLinkedin />
+                  </button>
+                </Link>
+                <Link href="https://twitter.com/aiiomide">
+                  <button className=" text-blue-400 "> <FaTwitterSquare />
+                  </button>
+                </Link>
+                <Link href="https://github.com/Ayothegod">
+                  <button className=" text-neutral-100 "><FaGithubSquare />
+                  </button>
+                </Link>
+              </div>
                 </ul>
             </div>
         </>

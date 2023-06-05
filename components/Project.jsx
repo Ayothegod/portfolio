@@ -14,7 +14,7 @@ const Project = ({ data }) => {
         </div>
 
         <div className="mt-4">
-          <h3 className="font-medium text-purple-600 text-lg sm:text-2xl leading-none">{data.name}</h3>
+          <h3 className="font-medium text-purple-600 text-lg sm:text-2xl leading-none font-russo">{data.name}</h3>
           <p className="text-[14px]"> {data.desc} </p>
 
           <div className="flex items-center gap-2">

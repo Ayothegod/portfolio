@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +10,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "russo": ['Russo One'],
+        // "quantico": ['Quantico', "sans-serif"], mildly alien, little orbitron
+        "orbitron": ['Orbitron', "sans-serif"],
+        "josefin": ['Josefin Sans', "sans-serif"],
+        // "courgette": [ 'Courgette', "cursive"], curvy
+        // "audiowide": [ 'Audiowide'], alien looks like orbitron
+      },
+    },
   },
   plugins: [],
 };

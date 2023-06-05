@@ -21,7 +21,7 @@ const Header = () => {
       className={`flex flex-col sm:flex-row sm:justify-between items-center p-2 `}
     >
       <div className="flex justify-between items-center w-full">
-        <h2 className="font-bold text-2xl sm:text-2xl text-white">Ayomide.</h2>
+        <h2 className="font-russo text-2xl sm:text-2xl text-white">Ayomide.</h2>
 
         <div>
           <button className="text-white text-3xl sm:hidden" onClick={() => setOpen(!open)}>
@@ -34,19 +34,17 @@ const Header = () => {
           <MobileMenu open={open} setOpen={setOpen} />
         }
 
-      <ul
-        className={`hidden sm:flex sm:items-end gap-6  justify-end w-full text-sm  flex-2 m-2 sm:m-0 transition duration-300 ease-in-out`}
-      >
-        <li className="text-lg hover:text-green-600 ">
+      <ul className={`hidden sm:flex sm:items-end gap-6  justify-end w-full flex-2 m-2 sm:m-0  font-orbitron text-lg font-medium`}>
+        <li className=" hover:text-purple-600">
           <Link href="/">Home</Link>
         </li>
-        <li className="text-lg hover:text-green-600">
+        <li className=" hover:text-purple-600">
           <Link href="#tools">Tools</Link>
         </li>
-        <li className="text-lg hover:text-green-600">
+        <li className=" hover:text-purple-600">
           <Link href="#projects">Projects</Link>
         </li>
-        <li className="text-lg hover:text-green-600">
+        <li className=" hover:text-purple-600">
           <Link href="/blog">Blog</Link>
         </li>
       </ul>
