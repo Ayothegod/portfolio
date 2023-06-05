@@ -23,7 +23,7 @@ export default function Home() {
       <main className="bg-black text-gray-300 py-1">
 
         <nav className="sticky top-0 border-b border-b-neutral-800  backdrop-blur-lg ">
-          <section className="max-w-[60rem] mx-auto ">
+          <section className="max-w-[50rem] mx-auto ">
             <Header />
           </section>
         </nav>
