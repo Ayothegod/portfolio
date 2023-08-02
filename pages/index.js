@@ -35,7 +35,7 @@ export default function Home() {
             <p className=" ">
               I am  a
               <span className=""> software developer with focus on full-stack web development</span>. I
-              enjoy building amazing and beautiful stuff for the web, and i am a big open-source advocate. when i'm not coding, i spend my time on AI, Drone
+              enjoy building amazing and beautiful stuff for the web, and i am a big open-source advocate. when i&apos;m not coding, i spend my time on AI, Drone
               Technology and International Politics.
             </p>
           </section>
