@@ -6,6 +6,7 @@ import {
   } from "react-icons/fa";
   import { BsLinkedin } from "react-icons/bs";
 //   import resume from "@/assets/ayomide-resume.pdf"
+import resume from "../public/ayomide-resume.pdf"
 
 const MobileMenu = ({ open, setOpen }) => {
     console.log("resume");
@@ -27,10 +28,11 @@ const MobileMenu = ({ open, setOpen }) => {
                     <li className="hover:text-purple-600 ">
                         <Link href="/blog">Blog</Link>
                     </li>
+                    {/* <a href={resume} target="_blank">Resume</a> */}
 
-                    {/* <button className="text-lg text-white bg-purple-600 rounded px-4 py-1 font-semibold font-josefin">
-                        <Link href={resume} target="_blank">Resume</Link>
-                    </button> */}
+                    <button className="text-lg text-white bg-purple-600 rounded px-4 py-1 font-semibold font-josefin">
+                        <Link href={resume} download>Resume</Link>
+                    </button>
 
                 <div className="flex items-center justify-center gap-8 w-full mt-4 text-lg">
                 <Link href="https://linkedin.com/in/aiiomide">
