@@ -28,9 +28,9 @@ const MobileMenu = ({ open, setOpen }) => {
                         <Link href="/blog">Blog</Link>
                     </li>
 
-                    <button className="text-lg text-white bg-purple-600 rounded px-4 py-1 font-semibold font-josefin">
+                    {/* <button className="text-lg text-white bg-purple-600 rounded px-4 py-1 font-semibold font-josefin">
                         <Link href={resume} target="_blank">Resume</Link>
-                    </button>
+                    </button> */}
 
                 <div className="flex items-center justify-center gap-8 w-full mt-4 text-lg">
                 <Link href="https://linkedin.com/in/aiiomide">
