@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai"
 import { FaTelegramPlane } from "react-icons/fa"
 
 const Project = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="">
       <div className="my-2 md:w-92">
