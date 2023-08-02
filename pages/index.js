@@ -34,8 +34,8 @@ export default function Home() {
             {/* orbitron is so alien and beautiful */}
             <p className=" ">
               I am  a
-              <span className="">software developer with focus on full-stack web development</span>. I
-              enjoy building amazing and beautiful stuff for the web, and i am a big open-source advocate and developer. when i am not coding, i spend my time on AI, Drone
+              <span className=""> software developer with focus on full-stack web development</span>. I
+              enjoy building amazing and beautiful stuff for the web, and i am a big open-source advocate. when i'm not coding, i spend my time on AI, Drone
               Technology and International Politics.
             </p>
           </section>
