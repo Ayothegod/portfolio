@@ -85,7 +85,7 @@ export default function Home() {
           <section className=" mt-4 pb-4 ">
             <h2 className="text-white font-medium text-3xl text-center font-orbitron">Connect</h2>
             <div className="flex gap-2 items-center justify-center">
-              <p>contact forms are not your thing? i get you</p>
+              <p>email me directly</p>
               <Link href="mailto:heyayomideadebisi@gmail.com?subject=hey Ayomide">
                 <button className="flex items-center underline gap-2 text-purple-600 ">email
                 </button>
@@ -103,7 +103,7 @@ export default function Home() {
 
             <div className="">
               <div className="flex items-center justify-around mt-4 text-3xl">
-                <Link href="https://linkedin.com/in/aiiomide">
+                <Link href="https://linkedin.com/in/aiolabs">
                   <button className="flex items-center gap-2 text-blue-300"> <BsLinkedin />
                   </button>
                 </Link>
