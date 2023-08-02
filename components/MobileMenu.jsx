@@ -5,8 +5,10 @@ import {
     FaGithubSquare,
   } from "react-icons/fa";
   import { BsLinkedin } from "react-icons/bs";
+  import resume from "@/assets/ayomide-resume.pdf"
 
 const MobileMenu = ({ open, setOpen }) => {
+    console.log(resume);
     return (
         <>
             {/* bruh */}
