@@ -33,11 +33,10 @@ export default function Home() {
             </h1>
             {/* orbitron is so alien and beautiful */}
             <p className=" ">
-              I&apos;m a{" "}
-              <span className="">software developer with focus on frontend</span>. I
-              enjoy building new stuff. I do enjoy experimenting a lot on new
-              tech and tools and i am a huge learner. I also spend time on AI, Drone
-              Technology, International Politics and i feel Machine Learning is quite boring but exciting.
+              I am  a
+              <span className="">software developer with focus on full-stack web development</span>. I
+              enjoy building amazing and beautiful stuff for the web, and i am a big open-source advocate and developer. when i am not coding, i spend my time on AI, Drone
+              Technology and International Politics.
             </p>
           </section>
 
